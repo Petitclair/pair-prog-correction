@@ -1,0 +1,66 @@
+body {
+    background-color: #595dd6;
+    margin: 0;
+}
+
+#invader {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    /* ajouté pour l'opimisation CSS vue à la pause */
+    /* width: calc(8 * 25px); */
+    border: 1px solid #34e7e4;
+    margin: 30px auto;
+}
+
+.line {
+    display: flex;
+    flex-direction: row;
+}
+
+.square {
+    width: 25px;
+    height: 25px;
+    border: 2px solid #34e7e4;
+    cursor: pointer;
+
+    /* ajouté pour l'opimisation CSS vue à la pause */
+    box-sizing: border-box;
+}
+
+.whiteSquare {
+    background-color: #e2e2e2;
+}
+
+.blueSquare {
+    background-color: blue;
+}
+
+/* FORMULAIRE */
+.configuration {
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #202494;
+}
+
+#gridSizeInput {
+    padding: 1em;
+    border: 0;
+    font-size: 1.1em;
+    width: 10em;
+    margin-right: 5px;
+    border-radius: 0.5em 0 0 0.5em;
+}
+
+#validateButton {
+    padding: 1em;
+    border: 0;
+    font-size: 1.1em;
+    color: white;
+    background-color: #F0F;
+    border-radius: 0 0.5em 0.5em 0;
+}
